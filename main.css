@@ -3,49 +3,69 @@ html{
     font-family: 'Lato', sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Old Standard TT', serif;
-    font-size: 75px;
-    font-weight: 00;
+    /*font-family: 'Old Standard TT', serif;*/
+}
+h1{
+
 }
 .nav{
+    background: white;
+    opacity: 0.75;
     text-align: left;
-    background:white;
     position: fixed;
-    width: 25%;
+    width: 200px;
     right: 0;
     top: 0;
     bottom: 0;
-    opacity: 0.75;
+    -webkit-box-shadow: -25px -1px 50px 25px white;
     transition: 0.25s ease-in-out;
+    z-index: 100;
 }
 .nav:hover{
-    width: 33%;
+    width: 250px;
+    -webkit-box-shadow: 0px 0px white;
     opacity: 1.0;
 }
 .navlink{
-    display: block;
-    padding: 16px 32px 16px 16px;
-    text-align: right;
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     color: #220901;
     transition: 0.125s;
-    z-index: 100;
+    
 }
-.navlink:hover{
+.link:hover{
     color: white;
-    background: #f40407;
+    background: #f4040799;
+}
+.navlink input{
+    display: block;
+    position: absolute;
+    opacity: 0;
+}
+.link{
+    display: block;
+    padding: 16px 32px 16px 16px;
+    text-align: right;
+    transition: 0.125s ease-in-out;
+}
+.navlink input:checked ~ .link{
+    padding-right: 100px;
 }
 .bg {
     position: fixed;
-    top: -10%;
-    left: -15%;
-    width: 115%;
-    height: 110%;
+    top: -400px;
+    left: -450px;
+    width: 200%;
+    height: 200%;
     z-index: -5;
-    opacity: 0.5;
-    animation: wiggle 0.25s infinite;
+    opacity: 0.6;
+}
+path{
+   transition: 0.125s ease-out; 
+}
+.wiggly{
+    /*animation: wiggle 0.5s infinite;*/
 }
 @keyframes wiggle {
   0% {
@@ -66,18 +86,39 @@ h1, h2, h3, h4, h5, h6{
 }
 
 header{
+    color: white;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    padding-top: 8px;
-    right: 25%;
+    top: 130px;
+    left: 25px;
+    -webkit-transform: rotate(44deg);
+    
 }
-header h1{padding-left: 8px;}
+header h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+div.content{
+    position: absolute;
+    top: 240px;
+    bottom: 64px;
+    padding: 12px;
+    padding-right: 265px;
+    display: block;
+    left: -105%;
+    right: 105%;
+    z-index: 99;
+}
+#about-page{background: #f86869;}
+#coding-page{background: #f5e066;}
+#design-page{background: #669766;}
+#contact-page{background: #66a2d7;}
 footer{
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    text-align: center;
+    text-align: right;
+    padding-right: 32px;
     padding-bottom: 8px;
 }

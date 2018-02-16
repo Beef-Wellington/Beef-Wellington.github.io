@@ -5,7 +5,10 @@
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>
-        <svg display="none">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="states.js"></script>
+        <div class="wiggly">
+            <svg display="none">
             
   <filter id="init">
     <feTurbulence type="fractalNoise" baseFrequency="0.003" numOctaves="2" data-filterId="3" />
@@ -38,10 +41,8 @@
   </filter>
 
 </svg>
-        <svg width="2000" height="1500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="bg">
-         <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+            <svg width="2000" height="1500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="bg">
          <g>
-          <title>Layer 1</title>
           <g stroke="null" id="svg_95">
            <g stroke="null" transform="matrix(2.4132591563363404,-0.8376296998132393,1.061520680503322,1.9042658139595559,-116.38026425745674,453.97483126255827) " id="svg_18">
             <path stroke="#000000" fill="#f40407" stroke-width="5" d="m320.50554,112.02736l46,71.2l63,-19l-10,-94l-99,41.8z" id="svg_2" stroke-opacity="0"/>
@@ -97,15 +98,29 @@
           </g>
          </g>
         </svg> 
+            <header>
+                <h2>DYLAN CETRULO</h2>
+            </header>
+        </div>
         <div class="nav">
-            <a class="navlink" href="#" >About</a>
-            <a class="navlink" href="#">Design</a>
-            <a class="navlink" href="#">Code</a>
-            <a class="navlink" href="#">Contact</a>
+            <label class="navlink" id="about">
+                <input type="radio" name="pages" class="navlink" onclick="show('about');"><span class="link">About</span>
+            </label>
+            <label class="navlink" id="coding">
+                <input type="radio" name="pages" class="navlink" onclick="show('coding');"><span class="link">Coding</span>
+            </label> 
+            <label class="navlink" id="design">
+                <input type="radio" name="pages" class="navlink" onclick="show('design');"><span class="link">Design</span>
+            </label> 
+            <label class="navlink" id="contact">
+                <input type="radio" name="pages" class="navlink" onclick="show('contact');"><span class="link">Contact</span>
+            </label> 
             <footer>Dylan Cetrulo 2018</footer>
         </div>
-        <header>
-            <!--<h1>My Name is</h1>--><h1>Dylan Cetrulo</h1>
-        </header>
+
+        <div class="content" id="about-page">about Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisl felis. Suspendisse elit eros, iaculis id diam eget, semper maximus dolor. Aenean nec scelerisque sapien. Vivamus nunc lectus, hendrerit vitae orci sed, pulvinar imperdiet libero. Nullam tempor pulvinar massa a tincidunt. Fusce in lacus sed erat varius gravida. Nullam mollis orci lorem, quis mattis nulla commodo porta. Nam ornare lacinia odio. Fusce nec turpis id odio fringilla rhoncus sit amet sit amet nisl. Phasellus a lorem ut eros mollis ornare. Mauris fermentum cursus elit non tempor. Aliquam ac eros enim.</div>
+        <div class="content" id="coding-page">coding Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisl felis. Suspendisse elit eros, iaculis id diam eget, semper maximus dolor. Aenean nec scelerisque sapien. Vivamus nunc lectus, hendrerit vitae orci sed, pulvinar imperdiet libero. Nullam tempor pulvinar massa a tincidunt. Fusce in lacus sed erat varius gravida. Nullam mollis orci lorem, quis mattis nulla commodo porta. Nam ornare lacinia odio. Fusce nec turpis id odio fringilla rhoncus sit amet sit amet nisl. Phasellus a lorem ut eros mollis ornare. Mauris fermentum cursus elit non tempor. Aliquam ac eros enim.</div>
+        <div class="content" id="design-page">design Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisl felis. Suspendisse elit eros, iaculis id diam eget, semper maximus dolor. Aenean nec scelerisque sapien. Vivamus nunc lectus, hendrerit vitae orci sed, pulvinar imperdiet libero. Nullam tempor pulvinar massa a tincidunt. Fusce in lacus sed erat varius gravida. Nullam mollis orci lorem, quis mattis nulla commodo porta. Nam ornare lacinia odio. Fusce nec turpis id odio fringilla rhoncus sit amet sit amet nisl. Phasellus a lorem ut eros mollis ornare. Mauris fermentum cursus elit non tempor. Aliquam ac eros enim.</div>
+        <div class="content" id="contact-page">contact Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisl felis. Suspendisse elit eros, iaculis id diam eget, semper maximus dolor. Aenean nec scelerisque sapien. Vivamus nunc lectus, hendrerit vitae orci sed, pulvinar imperdiet libero. Nullam tempor pulvinar massa a tincidunt. Fusce in lacus sed erat varius gravida. Nullam mollis orci lorem, quis mattis nulla commodo porta. Nam ornare lacinia odio. Fusce nec turpis id odio fringilla rhoncus sit amet sit amet nisl. Phasellus a lorem ut eros mollis ornare. Mauris fermentum cursus elit non tempor. Aliquam ac eros enim.</div>
     </body>
 </html>
