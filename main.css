@@ -3,7 +3,8 @@ html{
     font-family: 'Lato', sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
-    /*font-family: 'Old Standard TT', serif;*/
+    font-family: 'Righteous';
+    color: white;
 }
 h1{
 
@@ -65,7 +66,7 @@ path{
    transition: 0.125s ease-out; 
 }
 .wiggly{
-    /*animation: wiggle 0.5s infinite;*/
+    animation: wiggle 0.5s infinite;*/
 }
 @keyframes wiggle {
   0% {
@@ -88,31 +89,37 @@ path{
 header{
     color: white;
     position: absolute;
-    top: 130px;
-    left: 25px;
+    top: 125px;
+    left: 22px;
     -webkit-transform: rotate(44deg);
     
 }
 header h2{
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 24px;
+    font-size: 32px;
 }
 div.content{
     position: absolute;
     top: 240px;
     bottom: 64px;
     padding: 12px;
-    padding-right: 265px;
+    margin-right: 265px;
     display: block;
     left: -105%;
     right: 105%;
     z-index: 99;
 }
+.content h1{
+    margin: 0px 16px;
+}
+.content p{
+    color: white;
+}
 #about-page{background: #f86869;}
-#coding-page{background: #f5e066;}
+#coding-page{background: #66a2d7;}
 #design-page{background: #669766;}
-#contact-page{background: #66a2d7;}
+#contact-page{background: #f5e066;}
 footer{
     position: absolute;
     bottom: 0px;

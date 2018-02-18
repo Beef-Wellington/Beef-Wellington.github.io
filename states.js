@@ -1,5 +1,5 @@
 var pages = ["about", "design", "coding", "contact"];
-var colors = ["#f86869", "#669766", "#f5e066", "#66a2d7"];
+var colors = ["#f86869", "#669766", "#66a2d7", "#f5e066"];
 function show(id) {
     for (var i = 0; i < pages.length; i++) {
         if (pages[i] == id) {
