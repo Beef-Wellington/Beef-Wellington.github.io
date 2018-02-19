@@ -66,38 +66,33 @@ path{
    transition: 0.125s ease-out; 
 }
 .wiggly{
-    animation: wiggle 0.5s infinite;*/
+    animation: wiggle 0.75s infinite alternate;*/
 }
 @keyframes wiggle {
   0% {
     filter: url("#turbulence-1");
   }
-  25% {
-    filter: url("#turbulence-2");
-  }
-  50% {
-    filter: url("#turbulence-3");
-  }
-  75% {
-    filter: url("#turbulence-4");
-  }
   100% {
-    filter: url("#turbulence-5");
+    filter: url("#turbulence-2");
   }
 }
 
 header{
     color: white;
-    position: absolute;
-    top: 125px;
-    left: 22px;
-    -webkit-transform: rotate(44deg);
-    
 }
 header h2{
-    margin-top: 0px;
-    margin-bottom: 0px;
+    position: absolute;
+    top: 95px;
+    left: 25px;
     font-size: 32px;
+    -webkit-transform: rotate(44deg);
+}
+header h3{
+    -webkit-transform: rotate(-15deg);
+    position: absolute;
+    top: 110px;
+    left: 310px;
+    font-size: 24px;
 }
 div.content{
     position: absolute;
